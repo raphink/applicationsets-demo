@@ -8,3 +8,6 @@ wordpress:
     pathType: Prefix
     hostname: blog.172-17-0-9.nip.io
     tls: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      traefik.ingress.kubernetes.io/router.tls: "true"
