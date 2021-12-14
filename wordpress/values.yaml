@@ -1,9 +1,10 @@
 ---
-service:
-  type: ClusterIP
-
-ingress:
-  enabled: true
-  pathType: Prefix
-  hostname: blog.172-17-0-9.nip.io
-  tls: true
+wordpress:
+  service:
+    type: ClusterIP
+  
+  ingress:
+    enabled: true
+    pathType: Prefix
+    hostname: blog.172-17-0-9.nip.io
+    tls: true
